@@ -19,7 +19,7 @@
     background-color: rgba(0, 0, 0, 0.2);
 }
 
-.CoverTopImage .svg-shape {
+.CoverTopImage > .svg-shape {
     position: absolute;
     bottom: -60px;
     left: 0;
@@ -32,7 +32,6 @@
 }
 
 .CoverTopImage > .arrows {
-    display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
@@ -50,7 +49,7 @@
     cursor: pointer;
 }
 
-.CoverTopImage > .container .theme {
+.CoverTopImage > .theme {
     position: absolute;
     top: 80px;
     left: 20px;
@@ -59,7 +58,7 @@
     border-radius: 5px;
 }
 
-.CoverTopImage > .container .theme h3 {
+.CoverTopImage > .theme h3 {
     text-align: center;
     color: var(--white-color);
     letter-spacing: 1px;
@@ -67,41 +66,40 @@
     text-shadow: 0 0 5px #000;
 }
 
-.CoverTopImage > .container .theme .colors {
-    display: flex;
+.CoverTopImage > .theme .colors {
     justify-content: space-around;
     align-items: center;
     margin-top: 15px;
 }
 
-.CoverTopImage > .container .theme .colors span {
+.CoverTopImage > .theme .colors span {
     width: 20px;
     height: 20px;
     border-radius: 50%;
     cursor: pointer;
 }
 
-.CoverTopImage > .container .theme .colors span:first-child {
+.CoverTopImage > .theme .colors span:first-child {
     background-color: #272727;
 }
 
-.CoverTopImage > .container .theme .colors span:nth-child(2) {
+.CoverTopImage > .theme .colors span:nth-child(2) {
     background-color: #31493C;
 }
 
-.CoverTopImage > .container .theme .colors span:last-child {
+.CoverTopImage > .theme .colors span:last-child {
     background-color: #414066;
 }
 
+.CoverTopImage > .container {
+    height: 100vh;
+}
+
 .CoverTopImage > .container .text-box {
-    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     position: absolute;
-    top: calc(50% - 60px);
-    left: 50%;;
-    transform: translate(-50%, calc(50% - 60px));
     width: 500px;
     z-index: 20;
 }
@@ -128,7 +126,6 @@
 }
 
 .CoverTopImage > .container .text-box .links {
-    display: flex;
     justify-content: space-around;
     width: 100%;
     margin-top: 20px;
@@ -165,7 +162,7 @@
     left: 0;
 }
 
-.CoverTopImage-animation {
+.coverTopImage-animation {
     opacity: 0;
 }
 
@@ -197,12 +194,12 @@
         top: 40%;
     }
 
-    .CoverTopImage > .container .theme {
+    .CoverTopImage > .theme {
         width: 150px;
         padding: 5px;
     }
 
-    .CoverTopImage > .container .theme .colors span {
+    .CoverTopImage > .theme .colors span {
         border-radius: 15px;
     }
 

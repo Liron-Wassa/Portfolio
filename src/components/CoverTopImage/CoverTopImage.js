@@ -54,11 +54,11 @@ const CoverTopImage = forwardRef(({ changeTheme }, ref) => {
 
     return (
         <section className='CoverTopImage light' style={{backgroundImage: `url(${images[index]})`}} ref={ref}>
-            <div className='container'>
-                <div className='text-box coverTopImage-animation'>
+            <div className='container flex'>
+                <div className='text-box flex coverTopImage-animation'>
                     <h1>Hey, I'm <span className='name'>Liron Wassa</span></h1>
                     <p>I'm a Full-Stack web developer, please have a seat and scroll down before you click on the links.</p>
-                    <div className='links'>
+                    <div className='links flex'>
                         <a href='https://drive.google.com/file/d/1wfe5Y2vTN374G6But_NQwP2xsyHSwN6k/view?usp=sharing' target='_blank' rel="noreferrer">
                             Resume
                         </a>
@@ -67,23 +67,23 @@ const CoverTopImage = forwardRef(({ changeTheme }, ref) => {
                         </a>
                     </div>
                 </div>
-                <div className='theme coverTopImage-animation'>
-                    <h3>Change color theme</h3>
-                    <div className='colors'>
-                        <span onClick={() => changeTheme('dark')} />
-                        <span onClick={() => changeTheme('green')} />
-                        <span onClick={() => changeTheme('purple')} />
-                    </div>
-                </div>
             </div>
             <div className='svg-shape' style={{height: "150px", overflow: "hidden"}}>
                 <svg viewBox="0 0 500 150" preserveAspectRatio="none" style={{height: "100%", width: "100%"}}>
                     <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style={{stroke: "none"}}/>
                 </svg>
             </div>
-            <div className='arrows coverTopImage-animation'>
+            <div className='arrows flex coverTopImage-animation'>
                 <span onClick={previousSlide}>&lt;</span>
                 <span onClick={nextSlide}>&gt;</span>
+            </div>
+            <div className='theme coverTopImage-animation'>
+                <h3>Change color theme</h3>
+                <div className='colors flex'>
+                    <span onClick={() => changeTheme('dark')} />
+                    <span onClick={() => changeTheme('green')} />
+                    <span onClick={() => changeTheme('purple')} />
+                </div>
             </div>
         </section>
     );
