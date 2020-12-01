@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.c32d9a37.chunk.css",
+    "main.js": "/Portfolio/static/js/main.f3e80092.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.f3e80092.chunk.js.map",
+    "runtime-main.js": "/Portfolio/static/js/runtime-main.97e468f3.js",
+    "runtime-main.js.map": "/Portfolio/static/js/runtime-main.97e468f3.js.map",
+    "static/js/2.2f5c0233.chunk.js": "/Portfolio/static/js/2.2f5c0233.chunk.js",
+    "static/js/2.2f5c0233.chunk.js.map": "/Portfolio/static/js/2.2f5c0233.chunk.js.map",
+    "static/js/3.98ef5204.chunk.js": "/Portfolio/static/js/3.98ef5204.chunk.js",
+    "static/js/3.98ef5204.chunk.js.map": "/Portfolio/static/js/3.98ef5204.chunk.js.map",
+    "index.html": "/Portfolio/index.html",
+    "static/css/main.c32d9a37.chunk.css.map": "/Portfolio/static/css/main.c32d9a37.chunk.css.map",
+    "static/js/2.2f5c0233.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.2f5c0233.chunk.js.LICENSE.txt",
+    "static/media/IMG_9906.c8928f94.JPG": "/Portfolio/static/media/IMG_9906.c8928f94.JPG",
+    "static/media/IMG_9910.e33935c5.JPG": "/Portfolio/static/media/IMG_9910.e33935c5.JPG",
+    "static/media/PLJI1839.bd6ffdd8.JPG": "/Portfolio/static/media/PLJI1839.bd6ffdd8.JPG",
+    "static/media/PZVJ4930.d26002b4.JPG": "/Portfolio/static/media/PZVJ4930.d26002b4.JPG",
+    "static/media/bookback.687611e2.png": "/Portfolio/static/media/bookback.687611e2.png",
+    "static/media/bookfront.251fd476.png": "/Portfolio/static/media/bookfront.251fd476.png",
+    "static/media/budgetback.dd10d514.png": "/Portfolio/static/media/budgetback.dd10d514.png",
+    "static/media/budgetfront.9b5d03cb.png": "/Portfolio/static/media/budgetfront.9b5d03cb.png",
+    "static/media/carpostback.b695650a.png": "/Portfolio/static/media/carpostback.b695650a.png",
+    "static/media/carpostfront.536f4ca5.png": "/Portfolio/static/media/carpostfront.536f4ca5.png",
+    "static/media/chatroomback.fa4573c2.png": "/Portfolio/static/media/chatroomback.fa4573c2.png",
+    "static/media/chatroomfront.19f4c762.png": "/Portfolio/static/media/chatroomfront.19f4c762.png",
+    "static/media/flappyback.623b0973.png": "/Portfolio/static/media/flappyback.623b0973.png",
+    "static/media/flappyfront.4f342fa3.png": "/Portfolio/static/media/flappyfront.4f342fa3.png",
+    "static/media/logo.3ab428ea.png": "/Portfolio/static/media/logo.3ab428ea.png",
+    "static/media/snakeback.717d990d.png": "/Portfolio/static/media/snakeback.717d990d.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.97e468f3.js",
+    "static/js/2.2f5c0233.chunk.js",
+    "static/css/main.c32d9a37.chunk.css",
+    "static/js/main.f3e80092.chunk.js"
+  ]
+}
