@@ -59,7 +59,7 @@ const CoverTopImage = forwardRef(({ changeTheme }, ref) => {
                     <h1>Hey, I'm <span className='name'>Liron Wassa</span></h1>
                     <p>I'm a Full-Stack web developer, please have a seat and scroll down before you click on the links.</p>
                     <div className='links'>
-                        <a href='https://drive.google.com/file/d/1wfe5Y2vTN374G6But_NQwP2xsyHSwN6k/view' target='_blank' rel="noreferrer">
+                        <a href='https://drive.google.com/file/d/1wfe5Y2vTN374G6But_NQwP2xsyHSwN6k/view?usp=sharing' target='_blank' rel="noreferrer">
                             Resume
                         </a>
                         <a href='https://github.com/Liron-Wassa' target='_blank' rel="noreferrer">
