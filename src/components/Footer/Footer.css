@@ -1,0 +1,42 @@
+.Footer {
+    width: 100%;
+    background-color: var(--light-color);
+    overflow: hidden;
+}
+
+.Footer > .container .social-network.flex {
+    padding: 50px 0;
+    list-style: none;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.Footer > .container .social-network li {
+    margin: 20px;
+}
+
+.Footer > .container .social-network li:nth-child(odd) {
+    color: var(--white-color);
+}
+
+.Footer > .container .social-network li:nth-child(even) {
+    color: var(--secondary);
+}
+
+.Footer > .container .social-network li a {
+    font-size: 2rem;
+    color: inherit;
+}
+
+.Footer > p {
+    width: 100%;
+    text-align: center;
+    letter-spacing: 1px;
+    color: var(--secondary);
+    background-color: var(--primary);
+    padding: 10px 0;
+}
+
+.footer-animation {
+    opacity: 0;
+}

@@ -1,0 +1,120 @@
+.Projects {
+    width: 100%;
+    min-height: calc(100vh - 60px);
+    background-color: var(--primary);
+    padding: 50px 0;
+    overflow: hidden;
+}
+
+.Projects h1 {
+    letter-spacing: 1px;
+    font-weight: 500;
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    color: var(--secondary);
+}
+
+.Projects > .container.flex {
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.Projects > .container .project-box {
+    position: relative;
+    margin: 20px;
+    width: 250px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.Projects > .container .project-box:hover .front-face {
+    transform: rotateY(-180deg);
+}
+
+.Projects > .container .project-box:hover .back-face {
+    transform: rotateY(0deg);
+}
+
+.Projects > .container .project-box .front-face {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 5px; 
+    transition: all 0.5s ease-in-out;
+}
+
+.Projects > .container .project-box .back-face {
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    border-radius: 5px; 
+    transition: all 0.5s ease-in-out;
+}
+
+.Projects > .container .project-box .image-box {
+    width: 250px;
+    height: 300px;
+}
+
+.Projects > .container .project-box .image-box img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.Projects > .container .project-box h2 {
+    font-weight: 500;
+    margin-top: 20px;
+    letter-spacing: 1px;
+    width: 100%;
+    text-align: center;
+    color: var(--secondary);
+}
+
+.Projects > .container .project-box p {
+    margin-top: 20px;
+    letter-spacing: 1px;
+    width: 100%;
+    text-align: center;
+    color: var(--white-color);
+}
+
+.Projects > .container .project-box .back-face a {
+    text-shadow: 0 0 5px #000;
+    display: block;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 1px;
+    border: 1px solid var(--white-color);
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: var(--white-color);
+    margin-top: 20px;
+    transition: all 0.5s ease-in-out;
+    overflow: hidden;
+}
+
+.Projects > .container .project-box .back-face a::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: var(--secondary);
+    transition: all 0.5s ease-in-out;
+    z-index: -10;
+}
+
+.Projects > .container .project-box .back-face a:hover::after {
+    left: 0;
+}
+
+.projects-animation {
+    opacity: 0;
+}

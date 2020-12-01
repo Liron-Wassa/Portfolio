@@ -1,0 +1,147 @@
+.Skills {
+    width: 100%;
+    min-height: calc(100vh - 60px);
+    background-color: var(--primary);
+    padding: 50px 0;
+    overflow: hidden;
+}
+
+.Skills h1 {
+    letter-spacing: 1px;
+    font-weight: 500;
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    color: var(--secondary);
+}
+
+.Skills > .container.grid {
+    grid-template-rows: repeat(2, 1fr);
+    gap:10px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.Skills > .container > .database,
+.Skills > .container > .server {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    background-color: var(--light-color);
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5) inset,
+                0 0 5px rgba(0, 0, 0, 0.1) inset;
+}
+
+.Skills > .container > .frontend {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    grid-column: 1 / span 2;
+    background-color: var(--light-color);
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5) inset,
+                0 0 5px rgba(0, 0, 0, 0.1) inset
+}
+
+.Skills > .container > .database > svg path,
+.Skills > .container > .server > svg path,
+.Skills > .container > .frontend > svg path {
+    fill: var(--white-color);
+}
+
+.Skills > .container > .database > svg,
+.Skills > .container > .server > svg ,
+.Skills > .container > .frontend > svg {
+    font-size: 3rem;
+}
+
+.Skills > .container h2 {
+    margin-top: 10px;
+    color: var(--secondary);
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+}
+
+.Skills > .container .icons-box {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.Skills > .container p {
+    margin-bottom: 10px;
+}
+
+.Skills > .container .icon {
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px;
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5),
+                0 0 5px rgba(255, 255, 255, 0.1);
+}
+
+.Skills > .container .icon p {
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+}
+
+.Skills > .container .icon svg {
+    font-size: 1.8rem;
+}
+
+.Skills > .container .icons-box span {
+    color: #8f8e8e;
+}
+
+.Skills > .container .database .icons-box svg {
+    transform: rotate(45deg);
+}
+
+.Skills > .container .database .icons-box path {
+    fill: #589636;
+}
+
+.Skills > .container .server .icons-box .icon:first-child path {
+    fill: #3C873A;
+}
+
+.Skills > .container .server .icons-box .icon:last-child path {
+    fill: #F0DB4F;
+}
+
+.Skills > .container .frontend .icons-box .icon:first-child path {
+    fill: #F16529;
+}
+.Skills > .container .frontend .icons-box .icon:nth-child(2) path {
+    fill: #8ec3eb;
+}
+.Skills > .container .frontend .icons-box .icon:nth-child(3) path {
+    fill: #F0DB4F;
+}
+.Skills > .container .frontend .icons-box .icon:last-child path {
+    fill: #61DBFB;
+}
+
+@media (max-width: 600px) {
+    .Skills > .container.grid {
+        grid-template-rows: 1fr;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .Skills > .container > .frontend,
+    .Skills > .container > .server,
+    .Skills > .container > .database {
+        grid-column: 1 / span 3;
+    }
+}
+
+.skills-animation {
+    opacity: 0;
+}

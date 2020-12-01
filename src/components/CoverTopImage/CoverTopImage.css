@@ -1,0 +1,212 @@
+.CoverTopImage {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.5s;
+    overflow: hidden;
+}
+
+.CoverTopImage::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.CoverTopImage .svg-shape {
+    position: absolute;
+    bottom: -60px;
+    left: 0;
+    width: 100%;
+    height: 50px;
+}
+
+.CoverTopImage .svg-shape path {
+    fill: var(--primary);
+}
+
+.CoverTopImage > .arrows {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 20px;
+}
+
+.CoverTopImage > .arrows span {
+    user-select: none;
+    font-weight: 500;
+    font-size: 4rem;
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+.CoverTopImage > .container .theme {
+    position: absolute;
+    top: 80px;
+    left: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.CoverTopImage > .container .theme h3 {
+    text-align: center;
+    color: var(--white-color);
+    letter-spacing: 1px;
+    font-weight: 500;
+    text-shadow: 0 0 5px #000;
+}
+
+.CoverTopImage > .container .theme .colors {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.CoverTopImage > .container .theme .colors span {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.CoverTopImage > .container .theme .colors span:first-child {
+    background-color: #272727;
+}
+
+.CoverTopImage > .container .theme .colors span:nth-child(2) {
+    background-color: #31493C;
+}
+
+.CoverTopImage > .container .theme .colors span:last-child {
+    background-color: #414066;
+}
+
+.CoverTopImage > .container .text-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: calc(50% - 60px);
+    left: 50%;;
+    transform: translate(-50%, calc(50% - 60px));
+    width: 500px;
+    z-index: 20;
+}
+
+.CoverTopImage > .container .text-box h1 {
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-align: center;
+    width: 100%;
+    color: var(--white-color);
+    font-size: 2.1rem;
+}
+
+.CoverTopImage > .container .text-box h1 .name {
+    color: var(--secondary);
+}
+
+.CoverTopImage > .container .text-box p {
+    text-align: center;
+    letter-spacing: 1px;
+    color: var(--white-color);
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+.CoverTopImage > .container .text-box .links {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.CoverTopImage > .container .text-box .links a {
+    text-shadow: 0 0 5px #000;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 1px;
+    border: 1px solid var(--white-color);
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: var(--white-color);
+    transition: all 0.5s ease-in-out;
+    overflow: hidden;
+    width: 150px;
+}
+
+.CoverTopImage > .container .text-box .links a::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: var(--secondary);
+    transition: all 0.5s ease-in-out;
+    z-index: -10;
+}
+
+.CoverTopImage > .container .text-box .links a:hover::after {
+    left: 0;
+}
+
+.CoverTopImage-animation {
+    opacity: 0;
+}
+
+@media (max-width: 700px) {
+    .CoverTopImage .svg-shape {
+        display: none;
+    }
+
+    .CoverTopImage > .container .text-box {
+        width: 90%;
+        position: absolute;
+        top: 50%;
+    }
+
+    .CoverTopImage > .container .text-box h1 {
+        font-size: 1.6rem;
+    }
+
+    .CoverTopImage > .container .text-box p {
+        font-size: 0.9rem;
+    }
+
+    .CoverTopImage > .arrows span {
+        font-size: 3rem;
+    }
+
+    .CoverTopImage > .arrows {
+        position: absolute;
+        top: 40%;
+    }
+
+    .CoverTopImage > .container .theme {
+        width: 150px;
+        padding: 5px;
+    }
+
+    .CoverTopImage > .container .theme .colors span {
+        border-radius: 15px;
+    }
+
+    .CoverTopImage > .container .text-box .links a {
+        width: 120px;
+    }
+}

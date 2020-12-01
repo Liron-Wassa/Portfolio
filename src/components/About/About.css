@@ -1,0 +1,36 @@
+.About {
+    width: 100%;
+    min-height: calc(100vh - 60px);
+    background-color: var(--light-color);
+    padding: 50px 0;
+    overflow: hidden;
+}
+
+.About h1 {
+    letter-spacing: 1px;
+    font-weight: 500;
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    color: var(--secondary);
+}
+
+.About > .container {
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.About > .container p {
+    margin-top: 20px;
+    letter-spacing: 1px;
+    width: 100%;
+    text-align: left;
+    font-size: 1.3rem;
+    color: var(--white-color);
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.about-animation {
+    opacity: 0;
+}
