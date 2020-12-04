@@ -54,7 +54,7 @@ const Skills = forwardRef((props, ref) => {
                 </div>
                 <div className='database flex skills-animation'>
                     <FontAwesomeIcon icon={faDatabase} />
-                    <h2>Data Base</h2>
+                    <h2>Database</h2>
                     <div className='icons-box flex'>
                         <div className='icon flex'>
                             <p>mongo<span>DB</span></p>
